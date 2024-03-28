@@ -19,6 +19,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+STATICFILES_DIRS = [STATIC_DIR, ]
+STATIC_URL = '/static/'
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
+# The extra slash at the end ensures that the root of the URL (e.g. /media/)
+# is separated rom the filenames of content uploaded by your app’s users.
 
 
 # Quick-start development settings - unsuitable for production
@@ -124,12 +130,3 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [STATIC_DIR, ]
-
-
-
-MEDIA_ROOT = MEDIA_DIR
-MEDIA_URL = '/media/'
-# The extra slash at the end ensures that the root of the URL (e.g. /media/)
-# is separated rom the filenames of content uploaded by your app’s users.
