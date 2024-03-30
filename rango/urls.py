@@ -8,12 +8,17 @@ from rango import views
 app_name = 'rango'
 urlpatterns = [
     path('', views.index, name='index'),
-    path('about/', views.about, name='about')
-]
-
-# This line defines a URL pattern using the path function. 
-# It states that when the root URL (empty string '') is accessed, the index 
-# function from the views module should be called. 
-# The third and optional parameter is called name. It
-# provides a convenient way to reference the view, and by naming our URL mappings
-# we can employ reverse URL matching
+    path('about/', views.about, name='about'),
+    path('category/<slug:category_name_slug>/', 
+         views.show_category, name='show_category'),]
+'''
+In Django's URL routing system, the angle brackets `<` and `>` are used 
+to define a variable part of the URL that will be captured and passed to 
+the view.The syntax inside the angle brackets defines a "path converter"
+ and a variable name:
+- The part before the colon (`:`) is the path converter. Django provides 
+    several built-in path converters, such as `str`, `int`, `slug`, etc. 
+- The part after the colon is the variable name. This is the name that will 
+    be used in the view to access the captured value. The captured value will
+      be passed to the view as a keyword argument with this name.
+'''
