@@ -23,8 +23,8 @@ STATICFILES_DIRS = [STATIC_DIR, ]
 STATIC_URL = '/static/'
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
-# The extra slash at the end ensures that the root of the URL (e.g. /media/)
-# is separated rom the filenames of content uploaded by your app’s users.
+LOGIN_URL = 'rango:login'
+
 
 
 # Quick-start development settings - unsuitable for production

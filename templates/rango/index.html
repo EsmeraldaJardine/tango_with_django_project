@@ -33,9 +33,6 @@
         <ul>
             {% for page in pages %}
                 <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                <!-- The `href` attribute of the anchor tag is set to 
-                    the `url` of the `page` object, and the link text is
-                     set to the `title` of the `page` object.-->
             {% endfor %}
         </ul>
     {% else %}
