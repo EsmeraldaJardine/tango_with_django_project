@@ -36,7 +36,7 @@ SECRET_KEY = '=)sjlc@$pv0t^1^)vx@yl&d@5ny0p%tqm=6u^s-tdcd7$w!2#e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['esmeralda12.pythonanywhere.com']
 
 
 # Application definition
