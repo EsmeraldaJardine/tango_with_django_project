@@ -36,7 +36,7 @@ LOGIN_URL = 'rango:login'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['esmeralda12.pythonanywhere.com', 'https://esmeralda12.pythonanywhere.com/']
+ALLOWED_HOSTS = ['esmeralda12.pythonanywhere.com', 'https://esmeralda12.pythonanywhere.com/', 'http://127.0.0.1:8000/', '127.0.0.1' ]
 
 key = None
 with open('secret.key') as f:
