@@ -31,13 +31,17 @@ LOGIN_URL = 'rango:login'
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '=)sjlc@$pv0t^1^)vx@yl&d@5ny0p%tqm=6u^s-tdcd7$w!2#e'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['esmeralda12.pythonanywhere.com']
+ALLOWED_HOSTS = ['esmeralda12.pythonanywhere.com', 'https://esmeralda12.pythonanywhere.com/']
 
+key = None
+with open('secret.key') as f:
+    key = f.read().strip()
+SECRET_KEY = key
 
 # Application definition
 
