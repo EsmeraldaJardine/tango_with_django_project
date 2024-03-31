@@ -38,10 +38,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['esmeralda12.pythonanywhere.com', 'https://esmeralda12.pythonanywhere.com/', 'http://127.0.0.1:8000/', '127.0.0.1' ]
 
-key = None
-with open('secret.key') as f:
-    key = f.read().strip()
-SECRET_KEY = key
+SECRET_KEY = 'key'
 
 # Application definition
 
